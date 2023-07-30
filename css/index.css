@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../imgs/bg.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+.short_video_wrapper {
+  width: 258px;
+  height: 514.4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#phone {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.swiper_w {
+  width: 230px;
+  height: 490px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 90%;
+  color: #fff;
+}
+
+.swiper-slide .video_box {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  position: relative;
+}
+
+.video_box .video_title {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.video_box .video_wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.video_wrap video {
+  width: 100%;
+}
+
+.video_box .video_name {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.video_box .play {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6) url(../imgs/play.png) no-repeat center center;
+  background-size: 20%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.play.playing {
+  opacity: 0;
+}
