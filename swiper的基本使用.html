@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>短视频</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <style>
+      .swiper {
+        width: 300px;
+        height: 600px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        line-height: 600px;
+        font-size: 20px;
+        color: #fff;
+      }
+
+      .swiper-slide:nth-child(1) {
+        background-color: rgb(120, 6, 130);
+      }
+      .swiper-slide:nth-child(2) {
+        background-color: red;
+      }
+      .swiper-slide:nth-child(3) {
+        background-color: blue;
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://hbimg.huaban.com/464e27b3ba255f112bf8c8aa8e6291363233de3c15ac9c-M5Utk7_fw658"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F8819c6a3-90cf-4e24-86e3-29f4b53a9d3b%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1679579334&t=b34d9ad6ed7c749fbaf3b0f3e7d337f9"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F96614983-ef21-4a20-888a-24edca420090%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1679579334&t=0b64ba0e58093ad4789a4498664b28fc"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+      var mySwiper = new Swiper(".swiper", {
+        direction: "vertical", // 垂直切换选项
+        loop: false, // 循环模式选项
+      });
+    </script>
+  </body>
+</html>
